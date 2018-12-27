@@ -1,0 +1,153 @@
+
+
+
+/* unsplash random */  
+
+body {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+.container {
+  perspective: 500px;
+}
+.perspective {
+  perspective: 500px;
+}
+.collapsed {
+  height: 0;
+}
+.hidden {
+  visibility: hidden;
+}
+.expanded {
+  transition: height 500ms;
+  height: 330px;
+}
+.slice {
+  left: 50%;
+  position: relative;
+  transform-origin: 0 100%;
+  transform: translateX(-50%);
+}
+.image {
+  background-size: cover;
+}
+
+
+/* kinetinis tekstas*/ 
+
+    body {
+      background: black;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      display: inline-block;
+      position: relative;
+      line-height: .8;
+      font-size: 23vw;
+      letter-spacing: -10px;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+
+    .template {
+      color: white;
+      opacity: 0;
+    }
+
+    .slice {
+      color: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      animation: scale 4s infinite;
+      transition: all .1s;
+      transform-origin: bottom right;
+    }
+
+    .slice.oposite {
+      right: 0;
+      left: auto;
+      animation: scale-opposite 4s infinite;
+      transition: all .1s;
+    }
+
+    .slice.oposite .mask {
+      right: 0;
+      left: auto;
+    }
+
+    .mask {
+      position: absolute;
+      overflow: hidden;
+    }
+
+    @keyframes scale {
+      0% {
+        transform: scale3d(1, 1, 1)
+      }
+
+      25% {
+        transform: scale3d(0, 1, 1)
+      }
+
+      50% {
+        transform: scale3d(1, 1, 1)
+      }
+    }
+
+    @keyframes scale-opposite {
+      0% {
+        transform: scale3d(0, 1, 1)
+      }
+
+      25% {
+        transform: scale3d(1, 1, 0)
+      }
+
+      50% {
+        transform: scale3d(0, 1, 1)
+      }
+
+      100% {
+        transform: scale3d(0, 1, 1)
+      }
+    }
+
+
+/* not related to the animation */
+
+.plug {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.plug:after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  background-color: white;
+  content: '';
+  height: 1px;
+  width: 10%;
+  transition: width .3s;
+}
+
+.plug:hover:after {
+  width: 100%
+}
