@@ -1,0 +1,36 @@
+
+
+body {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+.container {
+  perspective: 500px;
+}
+.perspective {
+  perspective: 500px;
+}
+.collapsed {
+  height: 0;
+}
+.hidden {
+  visibility: hidden;
+}
+.expanded {
+  transition: height 500ms;
+  height: 330px;
+}
+.slice {
+  left: 50%;
+  position: relative;
+  transform-origin: 0 100%;
+  transform: translateX(-50%);
+}
+.image {
+  background-size: cover;
+}
