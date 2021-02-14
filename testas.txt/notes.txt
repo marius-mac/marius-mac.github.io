@@ -1,0 +1,99 @@
+* lampp
+
+sudo /opt/lampp/lampp start
+
+sudo /opt/lampp/lampp stop
+
+sudo /opt/lampp/lampp status
+
+------------------
+
+cd /opt/lampp/htdocs
+
+------------------
+
+
+
+Paruosimas laravel 
+
+* naujausia php versija:
+sudo apt install openssl php-common php-curl php-json php-mbstring php-mysql php-xml php-zip
+
+arba:
+
+* parinkta php versija:
+sudo apt install php7.4-common php7.4-bcmath openssl php7.4-json php7.4-mbstring
+
+
+
+
+* laravel 8.5.9 naujas:
+
+cd example-app/
+
+composer create-project laravel/laravel example-app/
+
+php artisan serve
+
+ctrl+c
+
+
+
+--------------------
+
+
+* sympfony 3.4.47 naujas:
+
+cd my-project/
+
+composer create-project symfony/framework-standard-edition my_project_name
+
+php bin/console server:run
+
+ctrl+c
+
+
+
+* sympfony 4.4.99 naujas: (neveikia server:run ?)
+
+cd my-project/
+
+composer create-project symfony/website-skeleton my_project ^4.4.0
+
+php bin/console server:run
+
+ctrl+c
+
+
+
+* sympfony 5.2.3 naujas: (neveikia server:run ?)
+
+cd my-project/
+
+composer create-project symfony/website-skeleton my_project_name
+
+php bin/console server:run
+
+ctrl+c
+
+
+
+---------------------
+
+
+
+
+
+
+
+
+
+-------
+linkomanija.net
+  specman - (ts)
+  mac3 -(ts)mac3
+  
+torent.ai
+ fizikasLT - (ts)
+-----------
+
